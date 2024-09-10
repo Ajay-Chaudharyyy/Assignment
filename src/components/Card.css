@@ -1,0 +1,186 @@
+.eachCard {
+  height: auto; /* Adjust height to be flexible */
+  width: 140%; /* Full width */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px 0;
+  position: relative; 
+}
+
+.cardData {
+  
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.check {
+  width: 1.6em;
+  height: 1.6em;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid rgb(17, 17, 17);
+  margin-right: 10px;
+  position: relative;
+}
+
+.dataPara {
+  flex-grow: 1; 
+  margin: 0;
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.dataPara2 {
+  flex-grow: 1; 
+  margin: 0;
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration-line: line-through;
+  opacity: calc(40%);
+}
+
+.icon {
+  cursor: pointer;
+  color: rgb(207, 63, 63);
+  transition: color 0.3s;
+  font-size: 1.3rem;
+}
+
+.icon:hover {
+  color: #f00;
+}
+
+.line {
+  height: 1px;
+  width: 100%; /* Full width */
+  background-color: #7fb4da;
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+}
+
+.checkIcon {
+  font-size: 1rem;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  color: rgb(219, 89, 41);
+}
+
+.icons {
+  width: 3rem;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editContainer {
+  width:100%;
+  display: flex;
+  align-items: center; 
+  margin-right: 10px;
+
+}
+
+.editInput {
+  height: 2rem; 
+  width: 100%; /* Full width */
+  max-width: 660px; /* Max width */
+  border-radius: 5px;
+  padding: 0 8px;
+  font-size: 1rem;
+  margin-right: 10px; 
+  border:none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.updateBtn {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  height: 2rem; 
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.updateBtn:hover {
+  background-color: #45a049; 
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .eachCard {
+      width: 140%;
+      padding: 5px;
+  }
+
+  .dataPara, .dataPara2 {
+      font-size: 1.1rem; /* Slightly smaller text */
+  }
+
+  .icon {
+    
+      font-size: 1.1rem;
+  }
+  .icons {
+    flex-direction: flex; /* Stack icons vertically */
+}
+  .editInput {
+      width: 100%;
+      font-size: 1.1rem;
+  }
+
+  .updateBtn {
+      font-size: 0.9rem;
+      padding: 0 8px;
+  }
+
+  .line {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .eachCard {
+      width: 150%;
+      padding: 5px;
+      margin: 5px 0;
+  }
+
+  .dataPara, .dataPara2 {
+      font-size: 1rem; /* Even smaller text */
+  }
+
+  .icon {
+      font-size: 1rem;
+  }
+
+  .editInput {
+      width: 100%;
+      font-size: 1rem;
+  }
+
+  .updateBtn {
+      font-size: 0.8rem;
+      padding: 0 5px;
+  }
+
+  .icons {
+      flex-direction: flex; /* Stack icons vertically */
+  }
+
+  .line {
+      width: 100%;
+  }
+}
